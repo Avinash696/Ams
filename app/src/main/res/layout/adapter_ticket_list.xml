@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.ams.amsvistara.viewmodel.TicketViewModel" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#B65858">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/rv_ticket_list_assets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Assets"
+                android:textSize="17sp"
+                android:padding="17dp"
+                android:layout_margin="5dp"
+                />
+
+            <TextView
+                android:id="@+id/rv_ticket_list_assignTo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="string/assign_to"
+                android:textSize="17sp"
+                android:padding="17dp"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/rv_ticket_list_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="string/title"
+                android:textSize="17sp"
+                android:padding="17dp"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/rv_ticket_list_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="string/description"
+                android:textSize="17sp"
+                android:padding="17dp"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/rv_ticket_list_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="string/image"
+                android:textSize="17sp"
+                android:padding="17dp"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/rv_ticket_list_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="string/status"
+                android:textSize="17sp"
+                android:padding="17dp"
+                android:layout_margin="5dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

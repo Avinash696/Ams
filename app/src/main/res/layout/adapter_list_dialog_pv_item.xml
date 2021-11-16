@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.ams.amsvistara.viewmodel.ItemViewModel" />
+
+        <!-- <variable
+             name="model"
+             type="com.ams.amsvistara.model.PVListModel" />-->
+
+        <variable
+            name="itemClickListener"
+            type="com.ams.amsvistara.interfaces.PvDialogClickListener" />
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:onClick="@{() -> itemClickListener.cardClicked(viewModel.itemModel)}"
+            android:minHeight="30dp"
+            android:padding="8dp"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:fontFamily="@font/robotoregular"
+                android:text="@{viewModel.tagCode}"
+                android:textAlignment="textStart"
+                android:clickable="true"
+                android:onClick="@{() -> itemClickListener.cardClicked(viewModel.itemModel)}"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="@color/primary_text_color"
+                android:textSize="14sp" />
+
+           <!-- <View
+                android:layout_width="0.8dp"
+                android:layout_height="match_parent"
+                android:background="@color/divider"></View>
+
+            <TextView
+                android:id="@+id/tvAndroidName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/robotoregular"
+                android:text="@{viewModel.tagName}"
+                android:textAlignment="center"
+                android:clickable="true"
+                android:onClick="@{() -> itemClickListener.cardClicked(viewModel.tagModel)}"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="@color/primary_text_color"
+                android:textSize="14sp" />-->
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

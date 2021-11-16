@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">AMS</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="Please_wait">Please Wait..</string>
+
+    <!-- Activity Titles -->
+    <string name="title_activity_barcode_scanning">Scan Barcode</string>
+
+    <!-- Misc Labels & Texts -->
+    <string name="scanned_code_result_label">Scan Result:</string>
+    <string name="splash_text_header">TIA CONSULTING</string>
+    <string name="splash_text_sub_header">Your local service provider for : Consulting Audit, Advisory &amp; Accounting.</string>
+
+    <string name="something_went_wrong">Something went wrong, Please try again later.</string>
+    <string name="error_invalid_file_format">Invalid selected file format.</string>
+    <string name="select_file_to_upload">Select a File to Upload</string>
+    <string name="install_file_manager">Please install  File Manager.</string>
+    <string-array name="actionMenu">
+        <item>ACTIONS</item>
+        <item>TRANSFER REQ</item>
+        <item>DISPOSAL REQ</item>
+        <item>TICKET</item>
+    </string-array>
+    <string name="action_str">ACTIONS</string>
+</resources>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AMS/app/src/main/res/drawable/custom_spinner.xml" value="0.18078175895765472" />
+        <entry key="..\:/AMS/app/src/main/res/layout/activity_all_assets_detail.xml" value="0.22" />
+        <entry key="..\:/AMS/app/src/main/res/layout/activity_all_assets_list.xml" value="0.1723684210526316" />
+        <entry key="..\:/AMS/app/src/main/res/layout/activity_audit.xml" value="0.1723684210526316" />
+        <entry key="..\:/AMS/app/src/main/res/layout/activity_barcode_scanner.xml" value="0.1723684210526316" />
+        <entry key="..\:/AMS/app/src/main/res/layout/activity_disposal_request.xml" value="0.1723684210526316" />
+        <entry key="..\:/AMS/app/src/main/res/layout/activity_excess_asset.xml" value="0.22" />
+        <entry key="..\:/AMS/app/src/main/res/layout/activity_excess_audit.xml" value="0.1723684210526316" />
+        <entry key="..\:/AMS/app/src/main/res/layout/activity_login.xml" value="0.14305555555555555" />
+        <entry key="..\:/AMS/app/src/main/res/layout/activity_main.xml" value="0.1723684210526316" />
+        <entry key="..\:/AMS/app/src/main/res/layout/activity_master_detail_list.xml" value="0.1" />
+        <entry key="..\:/AMS/app/src/main/res/layout/activity_master_list.xml" value="0.18" />
+        <entry key="..\:/AMS/app/src/main/res/layout/activity_pv_detail.xml" value="0.1723684210526316" />
+        <entry key="..\:/AMS/app/src/main/res/layout/activity_pv_list.xml" value="0.1723684210526316" />
+        <entry key="..\:/AMS/app/src/main/res/layout/activity_pv_reports.xml" value="0.1723684210526316" />
+        <entry key="..\:/AMS/app/src/main/res/layout/activity_setting_ip.xml" value="0.1723684210526316" />
+        <entry key="..\:/AMS/app/src/main/res/layout/activity_splash.xml" value="0.1723684210526316" />
+        <entry key="..\:/AMS/app/src/main/res/layout/activity_ta_detail.xml" value="0.1723684210526316" />
+        <entry key="..\:/AMS/app/src/main/res/layout/activity_ta_list.xml" value="0.1723684210526316" />
+        <entry key="..\:/AMS/app/src/main/res/layout/activity_tagging_detail.xml" value="0.1723684210526316" />
+        <entry key="..\:/AMS/app/src/main/res/layout/activity_tagging_list.xml" value="0.18" />
+        <entry key="..\:/AMS/app/src/main/res/layout/activity_tagging_reports.xml" value="0.1723684210526316" />
+        <entry key="..\:/AMS/app/src/main/res/layout/activity_ticket_detail.xml" value="0.1723684210526316" />
+        <entry key="..\:/AMS/app/src/main/res/layout/activity_ticket_list.xml" value="0.1723684210526316" />
+        <entry key="..\:/AMS/app/src/main/res/layout/activity_transfer_approval.xml" value="0.1723684210526316" />
+        <entry key="..\:/AMS/app/src/main/res/layout/activity_transfer_request.xml" value="0.22" />
+        <entry key="..\:/AMS/app/src/main/res/layout/adapter_allassets_list.xml" value="0.1723684210526316" />
+        <entry key="..\:/AMS/app/src/main/res/layout/adapter_ta_list_item.xml" value="0.1723684210526316" />
+        <entry key="..\:/AMS/app/src/main/res/layout/adapter_ticket_list.xml" value="0.1723684210526316" />
+        <entry key="..\:/AMS/app/src/main/res/layout/app_bar_main.xml" value="0.1" />
+        <entry key="..\:/AMS/app/src/main/res/layout/content_main.xml" value="0.1" />
+        <entry key="..\:/AMS/app/src/main/res/layout/custom_row.xml" value="0.1723684210526316" />
+        <entry key="..\:/AMS/app/src/main/res/layout/custom_spinner.xml" value="0.1723684210526316" />
+        <entry key="..\:/AMS/app/src/main/res/layout/dialog.xml" value="0.1723684210526316" />
+        <entry key="..\:/AMS/app/src/main/res/layout/search_list_dialog.xml" value="0.1723684210526316" />
+        <entry key="..\:/AMS/app/src/main/res/layout/simple_spinner_item.xml" value="0.1723684210526316" />
+        <entry key="..\:/AMS/app/src/main/res/layout/ta_list_dialog.xml" value="0.2" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

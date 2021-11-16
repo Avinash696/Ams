@@ -1,0 +1,1207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.ams.amsvistara.viewmodel.PVDetailViewModel" />
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fitsSystemWindows="true">
+
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="?attr/colorPrimary"
+                    app:popupTheme="@style/AppTheme.PopupOverlay"
+                    app:theme="@style/AppTheme.Toolbar"
+                    app:titleTextAppearance="@style/Toolbar.TitleText"
+                    app:titleTextColor="@color/toolbar_title" />
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="1dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:background="@color/colorPrimary"
+                    android:minHeight="50dp"
+                    android:weightSum="2">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.8"
+                        android:paddingTop="1dp"
+                        android:paddingBottom="1dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/robotobold"
+                            android:gravity="center_vertical|left"
+                            android:paddingLeft="14dp"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:text="ASSET NO.:"
+                            android:textColor="@color/white"
+                            android:textSize="13sp"></TextView>
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:background="@color/white" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1.2"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/robotobold"
+                            android:gravity="left"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="1dp"
+                            android:paddingBottom="1dp"
+                            android:text="@={viewModel.AssetNumber}"
+                            android:textColor="@color/white"
+                            android:textSize="13sp"></TextView>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:background="@color/colorPrimary"
+                    android:minHeight="50dp"
+                    android:weightSum="2">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.8"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="@font/robotobold"
+                            android:gravity="center_vertical|left"
+                            android:paddingLeft="14dp"
+                            android:paddingTop="1dp"
+                            android:paddingBottom="1dp"
+                            android:text="ASSET NAME:"
+                            android:textColor="@color/white"
+                            android:textSize="13sp"></TextView>
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:background="@color/white" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1.2"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/robotobold"
+                            android:gravity="left"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="1dp"
+                            android:paddingBottom="1dp"
+                            android:text="@={viewModel.AssetName}"
+                            android:textColor="@color/white"
+                            android:textSize="13sp"></TextView>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:background="@color/colorPrimary"
+                    android:minHeight="50dp"
+                    android:weightSum="2">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.8"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/robotobold"
+                            android:gravity="center_vertical|left"
+                            android:paddingLeft="14dp"
+                            android:paddingTop="1dp"
+                            android:paddingBottom="1dp"
+                            android:text="IMAGE COUNT:"
+                            android:textColor="@color/white"
+                            android:textSize="13sp"></TextView>
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:background="@color/white" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1.2"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/robotobold"
+                            android:gravity="left"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="1dp"
+                            android:paddingBottom="1dp"
+                            android:text="@={viewModel.ImageCount}"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"></TextView>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@color/label_gray"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="6dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:background="@color/cardColor"
+                                android:minHeight="50dp"
+                                android:weightSum="2">
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_weight="0.8"
+                                    android:paddingTop="5dp"
+                                    android:paddingBottom="5dp">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:fontFamily="@font/robotobold"
+                                        android:gravity="center_vertical|left"
+                                        android:paddingLeft="14dp"
+                                        android:paddingTop="1dp"
+                                        android:paddingBottom="1dp"
+                                        android:text="Asset Type:"
+                                        android:textColor="@color/primary_text_color"
+                                        android:textSize="14sp"></TextView>
+                                </RelativeLayout>
+
+                                <View
+                                    android:layout_width="0.5dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:background="@color/white" />
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_weight="1.2"
+                                    android:paddingTop="1dp"
+                                    android:paddingBottom="1dp">
+
+                                    <RadioGroup
+                                        android:id="@+id/toggleAT"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp"
+                                        android:layout_margin="2dp"
+                                        android:background="@drawable/toogle_outline"
+                                        android:orientation="horizontal">
+
+                                        <RadioButton
+                                            android:id="@+id/radioATTaggable"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginLeft="1dp"
+                                            android:layout_marginTop="1dp"
+                                            android:layout_marginBottom="1dp"
+                                            android:layout_weight="1"
+                                            android:background="@drawable/toogle_background"
+                                            android:button="@null"
+                                            android:gravity="center"
+                                            android:text="Taggable"
+                                            android:textColor="@color/white" />
+
+                                        <RadioButton
+                                            android:id="@+id/radioATCountable"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginTop="1dp"
+                                            android:layout_marginRight="1dp"
+                                            android:layout_marginBottom="1dp"
+                                            android:layout_weight="1"
+                                            android:background="@drawable/toogle_background"
+                                            android:button="@null"
+                                            android:gravity="center"
+                                            android:text="Non Taggable"
+                                            android:textColor="@color/white" />
+                                    </RadioGroup>
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:background="@color/cardColor"
+                                android:minHeight="50dp"
+                                android:weightSum="2">
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_weight="0.8"
+                                    android:paddingTop="1dp"
+                                    android:paddingBottom="1dp">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerHorizontal="true"
+                                        android:fontFamily="@font/robotobold"
+                                        android:gravity="center_vertical|left"
+                                        android:paddingLeft="14dp"
+                                        android:paddingTop="5dp"
+                                        android:paddingBottom="5dp"
+                                        android:text="Asset Surface:"
+                                        android:textColor="@color/primary_text_color"
+                                        android:textSize="14sp"></TextView>
+                                </RelativeLayout>
+
+                                <View
+                                    android:layout_width="0.5dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:background="@color/white" />
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_weight="1.2"
+                                    android:paddingTop="1dp"
+                                    android:paddingBottom="1dp">
+
+                                    <RadioGroup
+                                        android:id="@+id/toggleAS"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp"
+                                        android:layout_margin="2dp"
+                                        android:background="@drawable/toogle_outline"
+                                        android:orientation="horizontal">
+
+                                        <RadioButton
+                                            android:id="@+id/toggleASMetallic"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginLeft="1dp"
+                                            android:layout_marginTop="1dp"
+                                            android:layout_marginBottom="1dp"
+                                            android:layout_weight="1"
+                                            android:background="@drawable/toogle_background"
+                                            android:button="@null"
+                                            android:gravity="center"
+                                            android:text="Metallic"
+                                            android:textColor="@color/white" />
+
+                                        <RadioButton
+                                            android:id="@+id/toggleASNonMetallic"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginTop="1dp"
+                                            android:layout_marginRight="1dp"
+                                            android:layout_marginBottom="1dp"
+                                            android:layout_weight="1"
+                                            android:background="@drawable/toogle_background"
+                                            android:button="@null"
+                                            android:gravity="center"
+                                            android:text="Non Metallic"
+                                            android:textColor="@color/white" />
+                                    </RadioGroup>
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                       <!--     <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:background="@color/cardColor"
+                                android:minHeight="50dp"
+                                android:weightSum="2">
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_weight="0.8"
+                                    android:paddingTop="1dp"
+                                    android:paddingBottom="1dp">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:fontFamily="@font/robotobold"
+                                        android:gravity="center_vertical|left"
+                                        android:paddingLeft="14dp"
+                                        android:paddingTop="5dp"
+                                        android:paddingBottom="5dp"
+                                        android:text="Heated Asset:"
+                                        android:textColor="@color/primary_text_color"
+                                        android:textSize="14sp"></TextView>
+                                </RelativeLayout>
+
+                                <View
+                                    android:layout_width="0.5dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:background="@color/white" />
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_weight="1.2"
+                                    android:paddingTop="1dp"
+                                    android:paddingBottom="1dp">
+
+                                    <RadioGroup
+                                        android:id="@+id/toggleHA"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp"
+                                        android:layout_margin="2dp"
+                                        android:background="@drawable/toogle_outline"
+                                        android:orientation="horizontal">
+
+                                        <RadioButton
+                                            android:id="@+id/toggleHAYes"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginLeft="1dp"
+                                            android:layout_marginTop="1dp"
+                                            android:layout_marginBottom="1dp"
+                                            android:layout_weight="1"
+                                            android:background="@drawable/toogle_background"
+                                            android:button="@null"
+                                            android:gravity="center"
+                                            android:text="Yes"
+                                            android:textColor="@color/white" />
+
+                                        <RadioButton
+                                            android:id="@+id/toggleHANo"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginTop="1dp"
+                                            android:layout_marginRight="1dp"
+                                            android:layout_marginBottom="1dp"
+                                            android:layout_weight="1"
+                                            android:background="@drawable/toogle_background"
+                                            android:button="@null"
+                                            android:gravity="center"
+                                            android:text="No"
+                                            android:textColor="@color/white" />
+                                    </RadioGroup>
+                                </RelativeLayout>
+                            </LinearLayout>-->
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:background="@color/cardColor"
+                                android:minHeight="50dp"
+                                android:weightSum="2">
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_weight="0.8"
+                                    android:paddingTop="1dp"
+                                    android:paddingBottom="1dp">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:fontFamily="@font/robotobold"
+                                        android:gravity="center_vertical|left"
+                                        android:paddingLeft="14dp"
+                                        android:paddingTop="5dp"
+                                        android:paddingBottom="5dp"
+                                        android:text="Asset Condition:"
+                                        android:textColor="@color/primary_text_color"
+                                        android:textSize="14sp"></TextView>
+                                </RelativeLayout>
+
+                                <View
+                                    android:layout_width="0.5dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:background="@color/white" />
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_weight="1.2"
+                                    android:paddingTop="1dp"
+                                    android:paddingBottom="1dp">
+
+                                    <RadioGroup
+                                        android:id="@+id/toggleAC"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp"
+                                        android:layout_margin="2dp"
+                                        android:background="@drawable/toogle_outline"
+                                        android:orientation="horizontal">
+
+                                        <RadioButton
+                                            android:id="@+id/toggleACWorking"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginLeft="1dp"
+                                            android:layout_marginTop="1dp"
+                                            android:layout_marginBottom="1dp"
+                                            android:layout_weight="1"
+                                            android:background="@drawable/toogle_background"
+                                            android:button="@null"
+                                            android:gravity="center"
+                                            android:text="Working"
+                                            android:textColor="@color/white" />
+
+                                        <RadioButton
+                                            android:id="@+id/toggleACNotWorking"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginTop="1dp"
+                                            android:layout_marginRight="1dp"
+                                            android:layout_marginBottom="1dp"
+                                            android:layout_weight="1"
+                                            android:background="@drawable/toogle_background"
+                                            android:button="@null"
+                                            android:gravity="center"
+                                            android:text="Not Working"
+                                            android:textColor="@color/white" />
+                                    </RadioGroup>
+                                </RelativeLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@color/label_gray"
+
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="6dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:background="@color/cardColor"
+                                android:minHeight="50dp"
+                                android:weightSum="2">
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_weight="0.8"
+                                    android:paddingTop="1dp"
+                                    android:paddingBottom="1dp">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:fontFamily="@font/robotobold"
+                                        android:gravity="center_vertical|left"
+                                        android:paddingLeft="14dp"
+                                        android:paddingTop="5dp"
+                                        android:paddingBottom="5dp"
+                                        android:text="Asset Name:"
+                                        android:textColor="@color/primary_text_color"
+                                        android:textSize="14sp"></TextView>
+                                </RelativeLayout>
+
+                                <View
+                                    android:layout_width="0.5dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:background="@color/white" />
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_weight="1.2"
+                                    android:paddingTop="1dp"
+                                    android:paddingBottom="1dp">
+
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:backgroundTint="@color/colorPrimary"
+                                        android:focusedByDefault="true"
+                                        android:fontFamily="@font/robotoregular"
+                                        android:hint="Enter Asset Name"
+                                        android:inputType="text"
+                                        android:text="@={viewModel.AssetNameText}"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textColorHint="@color/colorPrimary"
+                                        android:textSize="15sp"></EditText>
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:background="@color/cardColor"
+                                android:minHeight="50dp"
+                                android:weightSum="2">
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_weight="0.8"
+                                    android:paddingTop="5dp"
+                                    android:paddingBottom="5dp">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:fontFamily="@font/robotobold"
+                                        android:gravity="center_vertical|left"
+                                        android:paddingLeft="14dp"
+                                        android:paddingTop="1dp"
+                                        android:paddingBottom="1dp"
+                                        android:text="Make:"
+                                        android:textColor="@color/primary_text_color"
+                                        android:textSize="14sp"></TextView>
+                                </RelativeLayout>
+
+                                <View
+                                    android:layout_width="0.5dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:background="@color/white" />
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_weight="1.2"
+                                    android:paddingTop="1dp"
+                                    android:paddingBottom="1dp">
+
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:backgroundTint="@color/colorPrimary"
+                                        android:fontFamily="@font/robotoregular"
+                                        android:hint="Enter Make"
+                                        android:inputType="text"
+                                        android:text="@={viewModel.MakeTxt}"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textColorHint="@color/colorPrimary"
+                                        android:textSize="15sp"></EditText>
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:background="@color/cardColor"
+                                android:minHeight="50dp"
+                                android:weightSum="2">
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_weight="0.8"
+                                    android:paddingTop="1dp"
+                                    android:paddingBottom="1dp">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:fontFamily="@font/robotobold"
+                                        android:gravity="center_vertical|left"
+                                        android:paddingLeft="14dp"
+                                        android:paddingTop="5dp"
+                                        android:paddingBottom="5dp"
+                                        android:text="Model:"
+                                        android:textColor="@color/primary_text_color"
+                                        android:textSize="14sp"></TextView>
+                                </RelativeLayout>
+
+                                <View
+                                    android:layout_width="0.5dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:background="@color/white" />
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_weight="1.2"
+                                    android:paddingTop="1dp"
+                                    android:paddingBottom="1dp">
+
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:backgroundTint="@color/colorPrimary"
+                                        android:fontFamily="@font/robotoregular"
+                                        android:hint="Enter Model"
+                                        android:inputType="text"
+                                        android:text="@={viewModel.ModelTxt}"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textColorHint="@color/colorPrimary"
+                                        android:textSize="15sp"></EditText>
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:background="@color/cardColor"
+                                android:minHeight="50dp"
+                                android:weightSum="2">
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_weight="0.8"
+                                    android:paddingTop="1dp"
+                                    android:paddingBottom="1dp">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:fontFamily="@font/robotobold"
+                                        android:gravity="center_vertical|left"
+                                        android:paddingLeft="14dp"
+                                        android:paddingTop="5dp"
+                                        android:paddingBottom="5dp"
+                                        android:text="Serial No:"
+                                        android:textColor="@color/primary_text_color"
+                                        android:textSize="14sp"></TextView>
+                                </RelativeLayout>
+
+                                <View
+                                    android:layout_width="0.5dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:background="@color/white" />
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_weight="1.2"
+                                    android:paddingTop="1dp"
+                                    android:paddingBottom="1dp">
+
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:backgroundTint="@color/colorPrimary"
+                                        android:fontFamily="@font/robotoregular"
+                                        android:hint="Enter Serial No"
+                                        android:inputType="text"
+                                        android:text="@={viewModel.SerialNo}"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textColorHint="@color/colorPrimary"
+                                        android:textSize="15sp"></EditText>
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:background="@color/cardColor"
+                                android:minHeight="50dp"
+                                android:weightSum="2">
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_weight="0.8"
+                                    android:paddingTop="1dp"
+                                    android:paddingBottom="1dp">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:fontFamily="@font/robotobold"
+                                        android:gravity="center_vertical|left"
+                                        android:paddingLeft="14dp"
+                                        android:paddingTop="5dp"
+                                        android:paddingBottom="5dp"
+                                        android:text="Location:"
+                                        android:textColor="@color/primary_text_color"
+                                        android:textSize="14sp"></TextView>
+                                </RelativeLayout>
+
+                                <View
+                                    android:layout_width="0.5dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:background="@color/white" />
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_weight="1.2"
+                                    android:paddingTop="1dp"
+                                    android:paddingBottom="1dp"
+                                    android:clickable="true"
+                                    android:id="@+id/rLLocation">
+
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:backgroundTint="@color/colorPrimary"
+                                        android:fontFamily="@font/robotoregular"
+                                        android:hint="Enter Location"
+                                        android:inputType="text"
+                                        android:clickable="false"
+                                        android:onClick="@null"
+                                        android:longClickable="false"
+                                        android:enabled="false"
+                                        android:text="@={viewModel.Location}"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textColorHint="@color/colorPrimary"
+                                        android:textSize="15sp"></EditText>
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:background="@color/cardColor"
+                                android:minHeight="50dp"
+                                android:weightSum="2">
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_weight="0.8"
+                                    android:paddingTop="1dp"
+                                    android:paddingBottom="1dp">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:fontFamily="@font/robotobold"
+                                        android:gravity="center_vertical|left"
+                                        android:paddingLeft="14dp"
+                                        android:paddingTop="5dp"
+                                        android:paddingBottom="5dp"
+                                        android:text="Sub Location:"
+                                        android:textColor="@color/primary_text_color"
+                                        android:textSize="14sp"></TextView>
+                                </RelativeLayout>
+
+                                <View
+                                    android:layout_width="0.5dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:background="@color/white" />
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_weight="1.2"
+                                    android:paddingTop="1dp"
+                                    android:paddingBottom="1dp"
+                                    android:clickable="true"
+                                    android:id="@+id/rLSubLocation">
+
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:backgroundTint="@color/colorPrimary"
+                                        android:fontFamily="@font/robotoregular"
+                                        android:hint="Enter Sub Location"
+                                        android:clickable="false"
+                                        android:onClick="@null"
+                                        android:longClickable="false"
+                                        android:enabled="false"
+                                        android:inputType="text"
+                                        android:text="@={viewModel.SubLocation}"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textColorHint="@color/colorPrimary"
+                                        android:textSize="15sp"></EditText>
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:background="@color/cardColor"
+                                android:minHeight="50dp"
+                                android:weightSum="2">
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_weight="0.8"
+                                    android:paddingTop="1dp"
+                                    android:paddingBottom="1dp">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:fontFamily="@font/robotobold"
+                                        android:gravity="center_vertical|left"
+                                        android:paddingLeft="14dp"
+                                        android:paddingTop="5dp"
+                                        android:paddingBottom="5dp"
+                                        android:text="SPOC Name:"
+                                        android:textColor="@color/primary_text_color"
+                                        android:textSize="14sp"></TextView>
+                                </RelativeLayout>
+
+                                <View
+                                    android:layout_width="0.5dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:background="@color/white" />
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_weight="1.2"
+                                    android:paddingTop="1dp"
+                                    android:paddingBottom="1dp">
+
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:backgroundTint="@color/colorPrimary"
+                                        android:fontFamily="@font/robotoregular"
+                                        android:hint="Enter SPOC Name"
+                                        android:inputType="text"
+                                        android:text="@={viewModel.SPOCName}"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textColorHint="@color/colorPrimary"
+                                        android:textSize="15sp"></EditText>
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:background="@color/cardColor"
+                                android:minHeight="50dp"
+                                android:weightSum="2">
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_weight="0.8"
+                                    android:paddingTop="1dp"
+                                    android:paddingBottom="1dp">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:fontFamily="@font/robotobold"
+                                        android:gravity="center_vertical|left"
+                                        android:paddingLeft="14dp"
+                                        android:paddingTop="5dp"
+                                        android:paddingBottom="5dp"
+                                        android:text="PV Name:"
+                                        android:textColor="@color/primary_text_color"
+                                        android:textSize="14sp"></TextView>
+                                </RelativeLayout>
+
+                                <View
+                                    android:layout_width="0.5dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:background="@color/white" />
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_weight="1.2"
+                                    android:paddingTop="1dp"
+                                    android:paddingBottom="1dp">
+
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:backgroundTint="@color/colorPrimary"
+                                        android:fontFamily="@font/robotoregular"
+                                        android:hint="Enter PV Name"
+                                        android:inputType="text"
+                                        android:text="@={viewModel.PVName}"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textColorHint="@color/colorPrimary"
+                                        android:textSize="15sp"></EditText>
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:background="@color/cardColor"
+                                android:minHeight="50dp"
+                                android:weightSum="2">
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_weight="0.8"
+                                    android:paddingTop="1dp"
+                                    android:paddingBottom="1dp">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:fontFamily="@font/robotobold"
+                                        android:gravity="center_vertical|left"
+                                        android:paddingLeft="14dp"
+                                        android:paddingTop="5dp"
+                                        android:paddingBottom="5dp"
+                                        android:text="Client Remarks:"
+                                        android:textColor="@color/primary_text_color"
+                                        android:textSize="14sp"></TextView>
+                                </RelativeLayout>
+
+                                <View
+                                    android:layout_width="0.5dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:background="@color/white" />
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_weight="1.2"
+                                    android:paddingTop="1dp"
+                                    android:paddingBottom="1dp">
+
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:backgroundTint="@color/colorPrimary"
+                                        android:fontFamily="@font/robotoregular"
+                                        android:hint="Enter Client Remarks"
+                                        android:inputType="text"
+                                        android:text="@={viewModel.ClientRemarks}"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textColorHint="@color/colorPrimary"
+                                        android:textSize="15sp"></EditText>
+                                </RelativeLayout>
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <Button
+                        android:id="@+id/btnSave"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_gravity="right"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/viewall_bg"
+                        android:drawableRight="@drawable/ic_save"
+                        android:drawablePadding="5dp"
+                        android:fontFamily="@font/robotobold"
+                        android:onClick="@{(v) -> viewModel.onClick(v)}"
+                        android:paddingLeft="85dp"
+                        android:paddingTop="8dp"
+                        android:paddingRight="60dp"
+                        android:paddingBottom="8dp"
+                        android:text="SAVE"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminateTint="@color/colorPrimary"
+            android:visibility="visible" />
+    </RelativeLayout>
+</layout>

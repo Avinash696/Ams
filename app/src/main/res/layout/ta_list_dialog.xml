@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout01"
+    android:layout_width="290dip"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:minHeight="400dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorPrimary"
+            android:fontFamily="@font/robotoblack"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:text="Select Option"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"></TextView>
+        <!--
+           <EditText
+               android:id="@+id/etxtSearch"
+               android:layout_width="280dip"
+               android:layout_height="wrap_content"
+               android:hint="Search"
+               android:layout_marginTop="8dp"
+               android:paddingLeft="20dp"
+               android:backgroundTint="@color/colorPrimaryDark"
+               android:textColor="@color/colorPrimaryDark"
+               android:textColorHint="@color/colorPrimaryDark"
+               android:fontFamily="@font/robotobold"
+               android:maxLines="1"></EditText>-->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/productList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"
+            android:choiceMode="singleChoice"
+            android:textAlignment="center"></androidx.recyclerview.widget.RecyclerView>
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminateTint="@color/colorPrimary"
+            android:visibility="visible"/>
+    </RelativeLayout>
+</LinearLayout>
