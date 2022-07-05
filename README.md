@@ -1,2 +1,2 @@
 #AMS
-![SCREENSHOT](app_bar.png)
+![splash.png](app_bar.png)
