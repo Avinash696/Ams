@@ -1,2 +1,2 @@
 #AMS
-![](app_bar.png)
+![SCREENSHOT](app_bar.png)
